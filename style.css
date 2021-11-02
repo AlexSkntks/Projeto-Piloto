@@ -1,0 +1,36 @@
+body{
+	justify-content: center;
+	display: flex;
+	background-color: rgb(158, 132, 132);
+}
+p{
+    @font-face{
+        font-family: 'Play';
+        src : url('Play-Bold.ttf') format ('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    font-family: 'Play', Time, serif;
+    font-size: 12pt;
+	text-align: center;
+}
+
+.main{
+	width: 1440px;
+	background-color: red;
+	height: 1437px;
+
+}
+
+.login{
+
+}
+.login-decoracao{
+	justify-content: center;
+	align-content: center;
+	width: 170px;
+	background-color:#837f8f;
+	border-radius: 12px;
+}
+
