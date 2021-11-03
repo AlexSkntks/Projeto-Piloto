@@ -21,6 +21,9 @@ p{
 	text-align: center;
 }
 
+main{
+	margin-top: 100px;
+}
 .main{
 	background-image: url("imagens/Rectangle_1.png");
 	background-repeat: no-repeat;
@@ -29,15 +32,18 @@ p{
 	text-align: center;
 }
 
-.login{
-	
-}
 .login-decoracao{
 	justify-content: center;
 	align-content: center;
-	width: 170px;
+	width: 180px;
 	background-color:#9E8FCA;
 	border-radius: 12px;
+	border-style: solid;
+	margin-right: 100px;
+}
+
+.texto-menu{
+	font-size: 22pt;
 }
 
 #socio{
