@@ -1,7 +1,8 @@
 body{
 	justify-content: center;
 	display: flex;
-	background-color: rgb(158, 132, 132);
+	background-color: rgb(61, 196, 112);
+	background-image: url('img_girl.jpg');
 }
 #logo{
 	margin-left: 10px;
