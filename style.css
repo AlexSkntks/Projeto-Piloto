@@ -1,12 +1,15 @@
 body{
 	justify-content: center;
 	display: flex;
-	background-color: rgb(158, 132, 132);
+	background-color: #F0EFEF
+}
+.backgroung{
+
 }
 #logo{
 	margin-left: 10px;
-	height: 76px;
-	width: 213px;
+	height: 86px;
+	width: 223px;
 }
 p{
     @font-face{
@@ -23,13 +26,12 @@ p{
 
 .main{
 	width: 1440px;
-	background-color: #F0EFEF;
 	height: 1437px;
 	text-align: center;
 }
 
 .login{
-
+	
 }
 .login-decoracao{
 	justify-content: center;
