@@ -4,7 +4,8 @@ body{
 	background-color: #F0EFEF
 }
 .backgroung{
-
+	background-color: rgb(61, 196, 112);
+	background-image: url('img_girl.jpg');
 }
 #logo{
 	margin-left: 10px;
