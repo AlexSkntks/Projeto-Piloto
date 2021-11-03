@@ -4,8 +4,9 @@ body{
 	background-color: rgb(158, 132, 132);
 }
 #logo{
-	height: 123px;
-	width: 123px;
+	margin-left: 10px;
+	height: 76px;
+	width: 213px;
 }
 p{
     @font-face{
@@ -24,6 +25,7 @@ p{
 	width: 1440px;
 	background-color: #F0EFEF;
 	height: 1437px;
+	text-align: center;
 }
 
 .login{
