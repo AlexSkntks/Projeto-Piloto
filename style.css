@@ -17,8 +17,21 @@ p{
     }
 
     font-family: 'Play', Time, serif;
-    font-size: 13pt;
+    font-size: 14pt;
 	text-align: center;
+}
+p2{
+	@font-face{
+        font-family: 'Play';
+        src : url('Play-Bold.ttf') format ('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    font-family: 'Play', Time, serif;
+    font-size: 14pt;
+
+	text-align: justify;
 }
 
 main{
