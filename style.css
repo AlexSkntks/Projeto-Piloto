@@ -58,7 +58,12 @@ main{
 	font-size: 22pt;
 }
 
-#socio{
+.socio{
 	justify-content: center;
 	align-content: center;
+}
+
+.redes{
+	width: 39px;
+	height: 36px;
 }
