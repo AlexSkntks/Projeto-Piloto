@@ -34,20 +34,21 @@ p2{
 
 main{
 	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .main{
 	background-image: url("imagens/Rectangle_1.png");
 	background-repeat: no-repeat;
+	background-color: #F0EFEF;
 	width: 1440px;
-	height: 1437px;
 	text-align: center;
 }
 
 .login-decoracao{
 	justify-content: center;
 	align-content: center;
-	width: 250px;
-	height: 50px;
+	width: 230px;
+	height: 45px;
 	background-color:#9E8FCA;
 	border-radius: 12px;
 	border-style: solid;
@@ -55,7 +56,7 @@ main{
 }
 
 .texto-menu{
-	font-size: 22pt;
+	font-size: 18pt;
 }
 
 .socio{
@@ -64,6 +65,6 @@ main{
 }
 
 .redes{
-	width: 39px;
-	height: 36px;
+	width: 30px;
+	height: 27px;
 }
