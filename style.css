@@ -29,7 +29,13 @@ p2{
 
     font-family: 'Play', Time, serif;
     font-size: 14pt;
-	align-content:stretch;
+}
+.apresentacao{
+	justify-content: center;
+	text-align: justify;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 50px;
 }
 
 main{
@@ -44,15 +50,20 @@ main{
 	text-align: center;
 }
 
+#botao-login{
+	background-color: none;
+	padding-left: 160px;
+}
 .login-decoracao{
-	justify-content: center;
-	align-content: center;
 	width: 230px;
 	height: 45px;
 	background-color:#9E8FCA;
 	border-radius: 12px;
 	border-style: solid;
 	margin-right: 100px;
+}
+#texto-login{
+	color: white;
 }
 
 .texto-menu{
