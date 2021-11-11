@@ -14,31 +14,12 @@
     <title>Buffet Asset/Contatos</title>
 
 	<style>
-
 		.col-6{
-			/* background-color:#F0EFEF; */
-			background-color: yellow;
 			border-style: hidden;
-			padding-right: 150px;
 		}
-		.col-3{
-			background-color: turquoise;
+		.col-4{
+			background-color:#F0EFEF;
 		}
-		.texto-contato1{
-			padding-top: 100px;
-		}
-		.texto-contato2{
-			padding-top: 100px;
-		}
-        .destaque{
-            text-align: left;
-            font-size: 25px;
-        }
-        .titulo{
-            text-align: left;
-			justify-content: left;
-            font-size: 25px;
-        }
         p2{
             text-align: justify;
         }
@@ -49,7 +30,6 @@
 		<div class="main">
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-light">
-					
 
 					<a class="navbar-brand" href="#"><img id="logo" src="imagens/logo.png"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,10 +50,10 @@
 								<li><button id="socio2" onmouseover="changeBG(2)" onmouseleave="oldColor(2)" href="file:///home/alex/myGit/Projeto-Piloto/socio2.html"  class="dropdown-item" style="background-color:  #9E8FCA;"><p>Jessica Andrade de Souza</p></button></li>
 								</ul>
 							</li>
-							
+
 							<a class="nav-link active" href="#"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
-							
-							
+
+
 						</li>
 						</ul>
 						<nav class="navbar navbar-expand-lg navbar-light">
@@ -83,51 +63,58 @@
 								</div>
 							</div>
 						</nav>
-						
-					
+
+
 						</div>
 					</div>
 				  </nav>
 			  	</header>
 				<main>
+					
+					<br><br>
 					<div class="container">
-                        <br>
-                        <div class="row">
-                            <div class="col" style="background-color: orange;">
+						<div class="row">
+                            <div class="col">
 								<div>
 									<p class="titulo">Qual a melhor forma para você falar com a gente?</p>
 								</div>
 							</div>
                         </div>
-						<div class="row row-cols-3">
-						 	<div class="col-6"><img class="contatos" src="imagens/Contatos.png"></div>
-						  	<div class="col-3">
+						<br>
+						<div class="row">
+						  <div class="col-sm-3">
+							<img class="contatos" src="imagens/Contatos.png">
+						  </div>
+
+						  <div class="col-sm-9" >
+							<div class="row row-cols-2">
+							  <div class="col-6 col-sm-6">
 								<div class="texto-contato1">
 									<p class="destaque">E-mail</p>
 									<p2>Interessado em conhecer mais sobre a gente? Entre em contato.<br>exemplo@gmail.com</p2>
 								</div>
-							</div>
-						 	<div class="col-3">
-								 <div class="texto-contato2">
-                                     
+							  </div>
+							  <div class="col-6 col-sm-6">
+								<div class="texto-contato2">
+
 									<p class="destaque">Telefone</p>
 									<p2>Se preferir, você pode nos ligar pelo seguinte número.<br>xxx-xxxx-xxxx</p2>
                                  </div>
-                            </div>
-						  <div class="col-6" style="visibility: hidden;"></div>
-						  <div class="col-6" style="background-color: violet;">
-							<div class="texto-contato3">
-								<p class="destaque">Chat</p>
-								<p2>Precisa de conversar com algum dos nossos funcionarios agora?<br>Confira nosso chat 24 horas.</p2>
+							  </div>
+							  <div class="col-12 col-sm-12">
+								<div class="texto-contato3">
+									<p class="destaque">Chat</p>
+									<p2>Precisa de conversar com algum dos nossos funcionarios agora?<br>Confira nosso chat 24 horas.</p2>
+								</div>
+							  </div>
 							</div>
-							</div>
-                           
+						  </div>
 						</div>
-					  </div>
-				</main>	 
-				
+					</div>
+				</main>
+
 				<footer >
-					
+
 					<!-- Grid container -->
 					<div class="container">
 
@@ -137,12 +124,12 @@
 							</div>
 							<div class="col-1">
 								<a href="#"><img class="redes" src="imagens/whatsapp.png"/></a>
-							
+
 							</div>
 							<div class="col-1">
 								<a href="#"><img class="redes" src="imagens/Telegram.png"/></a>
 							</div>
-							
+
 							<div class="col-1">
 								<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="imagens/github.png"/></a>
 							</div>
@@ -156,9 +143,9 @@
 						</div>
 
 					</div>
-				  
+
 				</footer>
-				
+
 		</div>
 		<!-- Option 1: Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

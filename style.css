@@ -2,6 +2,7 @@ body{
 	justify-content: center;
 	display: flex;
 }
+
 #logo{
 	margin-left: 50px;
 	height: 116px;
@@ -102,6 +103,36 @@ footer{
 	left: 0;
 	width: max-content; */
 	background-color: blueviolet;
-	
+}
 
+
+/*CSS de contatos*/
+.texto-contato1{
+	padding-left: 190px;
+	
+	text-align: left;
+}
+.texto-contato2{
+	padding-left: 40px;
+	margin-left: 60px;
+	text-align: justify;
+	border-left: black;
+	border-left-style: solid;
+}
+.texto-contato3{
+	padding-top: 15px;
+	text-align: justify;
+	margin-left: 190px;
+	border-top: black;
+	border-top-style: solid;
+	margin-top: 20px;
+}
+.destaque{
+	text-align: left;
+	font-size: 25px;
+}
+.titulo{
+	text-align: left;
+	justify-content: left;
+	font-size: 25px;
 }
