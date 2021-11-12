@@ -10,20 +10,70 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
-    <title>Buffet Asset/Contatos</title>
+    <title>Buffet Asset/Home</title>
 
 	<style>
-		tl{
-			border-style: solid;
+		.main{
+			background-image:url("imagens/rectangle_Home.png");
+			background-size: 105% 30%;
 		}
-
-		td{
+		.texto-home{
+			color: white;
+			font-size: 24pt;
+		}
+		.imagem_home{
+			padding-bottom: 0px; 
+			padding-left: 150px
+		}
+		.introducao{
+			text-align: left;
+			display: grid;
+			justify-items: center;
+		}
+		.box-texto-introducao{
 			border-style: solid;
+			border-top-left-radius: 60px;
+			border-bottom-right-radius: 60px;
+			height: 110px;
+			width: 650px;
+			padding-top: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-color: #9E8FCA;
+			color: white;
+			background-color:#9E8FCA;
+			text-align: justify;
+		}
+		.box-texto{
+			margin-top: 30%;
+		}
+		.botao-contato{
+			margin-top: 30px;
+		}
+		.slides{
+			height: 394px;
+			width: 670px;
+			text-align: center;
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto
+		}
+		.titulo_slide{
+			width: 230px;
+			height: 30px;
+			border-radius: 12px;
+			background-color: #363981;
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+		}
+		h5{
+			color: white;
 		}
 	</style>
   </head>
   <body>
-		<div class="main">
+		<div class="main" >
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-light">
 
@@ -64,45 +114,158 @@
 						</div>
 					</div>
 				  </nav>
-			  	</header>
-				<main>
-					
+			</header>
 
-				</main>
-
-				<footer >
-
-					<!-- Grid container -->
-					<div class="container">
-
-						<div class="row row-cols-auto">
-							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/instagram.png"/></a>
-							</div>
-							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/whatsapp.png"/></a>
-
-							</div>
-							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/Telegram.png"/></a>
-							</div>
-
-							<div class="col-1">
-								<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="imagens/github.png"/></a>
-							</div>
-							<div class="col-8">
-								<div class="chat" style="border-style: solid; border-radius: 100px; width: 80px; background-color: #C1B0F2;">
-									<a href="#"><img class="redes" src="imagens/chat.png"/></a>
-
+			<main>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="introducao">
+								<p2 class="texto-home">
+									Aqui o seu dinheiro rende mais! Conte com profissionais bem qualificados na
+									Buffet Asset.
+								</p2>
+								<div class="botao-contato">
+									<a href="contatos.html"><img src="imagens/entre_em_contato.png" width="330px" height="70px"></a>
 								</div>
-
 							</div>
 						</div>
+						<div class="col">
+							<div class="imagem_home">
+								<img src="imagens/apresentacao1.png" width="110%" height="110%">
+							</div>
+						</div>
+					</div>
+				</div>
+				  <div class="container">
+					<div class="row">
+						<div class="col" style="border-bottom-color: black; border-bottom-style: solid;"> </div>
+					  </div>
+					<div class="row">
+					  <div class="col">
+						<img src="imagens/Team_goals-rafiki-storyset.png">
+					  </div>
+					  <div class="col">
+						<div class="box-texto">
+							<h2>Por que investir com a gente?</h2>
+							<div class="box-texto-introducao">
+								<p class="texto-introducao" style="font-size: 16pt; text-align: justify;">
+									Somos uma das maiores consultorias de investimentos do 
+									brasil, venha ter a segurança financeira que o seu bem estar
+									exige com nossa equipe de investidores.
+								</p>
+							</div>
+						</div>
+						
+					  </div>
+					</div>
+					<div class="row">
+						<div class="col" style="border-top: black; border-top-style: solid; border-bottom: black; border-bottom-style: solid;">
+							<br><br>
+							<h2>Serviços</h2>
+							<br>
+							<div>
+								<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+									<div class="carousel-indicators">
+									  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+									</div>
+									<div class="carousel-inner">
+									  <div class="carousel-item active" data-bs-interval="10000">
+										<div class="slides">
+											<img src="imagens/servicos_1.png" class="d-block w-100">
+										</div>
+										<div class="carousel-caption d-none d-md-block">
+											<div class="titulo_slide">
+												<h5>Investimentos</h5>
+											</div>
+										  <p>Produtos de renda fixa, renda variável, fundos de investimento.</p>
+										</div>
+									  </div>
+									  <div class="carousel-item" data-bs-interval="10000">
+										  <div class="slides" style="background-color: white">
+											<img src="imagens/servicos_2.png" class="d-block w-100">
+										  </div>
+										<div class="carousel-caption d-none d-md-block">
+											<div class="titulo_slide">
+												<h5>Seguros e previdência</h5>
+											</div>
+										  <p>Previdência privada, seguros de vida, seguros para empresa.</p>
+										</div>
+									  </div>
+									  <div class="carousel-item" data-bs-interval="10000">
+										<div class="slides" style="background-color: white">
+											<img src="imagens/servicos_3.png" class="d-block w-100">
+										</div>
+										<div class="carousel-caption d-none d-md-block">
+											<div class="titulo_slide">
+												<h5>Produtos financeiros</h5>
+											</div>
+										  <p>Conta corrente, opções de financiamento, capital de giro.</p>
+										</div>
+									  </div>
+									  <div class="carousel-item" data-bs-interval="10000">
+										<div class="slides" class="d-block w-100" style="background-color: white">
+											<img src="imagens/servicos_4.png" width="110%" height="110%">
+										</div>
+										<div class="carousel-caption d-none d-md-block">
+											<div class="titulo_slide">
+												<h5>Private</h5>
+											</div>
+										  <p>Acessoria de investimentos com foco na preservação e aumento do patrimônio.</p>
+										</div>
+									  </div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+									  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+									  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
+							<br><br>
+						</div>
+					  </div>
+					</div>
+			</main>
+			<footer >
 
+				<!-- Grid container -->
+				<div class="container">
+
+					<div class="row row-cols-auto">
+						<div class="col-1">
+							<a href="#"><img class="redes" src="imagens/instagram.png"/></a>
+						</div>
+						<div class="col-1">
+							<a href="#"><img class="redes" src="imagens/whatsapp.png"/></a>
+
+						</div>
+						<div class="col-1">
+							<a href="#"><img class="redes" src="imagens/Telegram.png"/></a>
+						</div>
+
+						<div class="col-1">
+							<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="imagens/github.png"/></a>
+						</div>
+						<div class="col-8">
+							<div class="chat" style="border-style: solid; border-radius: 100px; width: 80px; background-color: #C1B0F2;">
+								<a href="#"><img class="redes" src="imagens/chat.png"/></a>
+
+							</div>
+
+						</div>
 					</div>
 
-				</footer>
+				</div>
 
+			</footer>
+			
 		</div>
 		<!-- Option 1: Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

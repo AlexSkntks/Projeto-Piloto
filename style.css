@@ -39,6 +39,28 @@ p2{
 	margin-top: 50px;
 }
 
+h5{
+	@font-face{
+        font-family: 'Play';
+        src : url('Play-Bold.ttf') format ('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    font-family: 'Play', Time, serif;
+}
+
+h2{
+	@font-face{
+        font-family: 'Play';
+        src : url('Play-Bold.ttf') format ('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    font-family: 'Play', Time, serif;
+}
+
 main{
 	margin-top: 110px;
 	margin-bottom: 100px;
@@ -49,6 +71,7 @@ footer{
 	padding-top: 10px;
 	height: 50px;
 }
+
 .main{
 	background-image: url("imagens/Rectangle_1.png");
 	background-repeat: no-repeat;
