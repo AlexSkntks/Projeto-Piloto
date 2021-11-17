@@ -131,13 +131,13 @@ footer{
 
 /*CSS de contatos*/
 .texto-contato1{
-	padding-left: 190px;
+	padding-left: 100px;
 	
 	text-align: left;
 }
 .texto-contato2{
-	padding-left: 40px;
-	margin-left: 60px;
+	padding-left: 20px;
+	/* margin-left: 60px; */
 	text-align: justify;
 	border-left: black;
 	border-left-style: solid;
