@@ -10,20 +10,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
-    <title>Buffet Asset/Contatos</title>
+    <title>Buffet Asset</title>
 	<script type="text/javaScript" src="javaScript.js"></script>
-	<style>
-		.col-6{
-			border-style: hidden;
-		}
-		.col-4{
-			background-color:#F0EFEF;
-		}
-        p2{
-            text-align: justify;
-        }
-	</style>
 
+	<style>
+		input{
+			background-image: linear-gradient(#7876EF, white);
+		}
+		main{
+			margin-top: 150px;
+		}
+	</style>
   </head>
   <body>
 		<div class="main">
@@ -69,56 +66,37 @@
 				  </nav>
 			  	</header>
 				<main>
-					
-					<br><br>
-					<div class="container-fluid px-4">
-						<div class="row">
-                            <div class="col">
-								<div>
-									<p class="titulo">Qual a melhor forma para você falar com a gente?</p>
-								</div>
-							</div>
-                        </div>
-						<br>
-						<div class="row gx-5">
-						  <div class="col-lg-3">
-							<div class="p-3"><img class="contatos" src="imagens/Contatos.png" width="350px" alt="Ilustração" title="Atendimento ao publico"></div>
-						  </div>
-
-						  <div class="col-lg-9">
-							<div class="p-3">
-								<div class="row row-cols-2 gx-5"> <!-- Linha direitta -->
-									<div class="col-6 col-lg-6" >
-									  <div class="p-3">
-										  <div class="texto-contato1">
-											  <p class="destaque">E-mail</p>
-											  <p2>Interessado em conhecer mais sobre a gente? Entre em contato.<br>exemplo@gmail.com</p2>
-										  </div>
+					<div class="container">
+						<div class="row cols-2">
+							<div class="col" style="border-right: black; border-right-style: solid; border-right-width: 3pt;">
+								<form>
+									<div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput" placeholder="login">
 									  </div>
-									  
-									</div>
-									<div class="col-6 col-lg-6">
-										<div class="p-3">
-											<div class="texto-contato2">
-	  
-												<p class="destaque">Telefone</p>
-												<p2>Se preferir, você pode nos ligar pelo seguinte número.<br>xxx-xxxx-xxxx</p2>
-											 </div>
-										</div>
-									</div>
-									<div class="col-12 col-lg-12">
-										<div class="p-3">
-											<div class="texto-contato3">
-												<p class="destaque">Chat</p>
-												<p2>Precisa de conversar com algum dos nossos funcionarios agora?<br>Confira nosso chat 24 horas.</p2>
-											</div>
-										</div>
-									  
-									</div>
-								</div>
+									  <div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="senha">
+									  </div>
+								</form>
 							</div>
-							
-						  </div>
+							<div class="col">
+								<form>
+									<div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput" placeholder="nome">
+									  </div>
+									  <div class="mb-3">
+										<input type="email" class="form-control" id="formGroupExampleInput2" placeholder="email">
+									  </div>
+									  <div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="senha">
+									  </div>
+									  <div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="confirmar senha">
+									  </div>
+									  <div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="carteira">
+									  </div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</main>

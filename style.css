@@ -82,19 +82,26 @@ footer{
 
 #botao-login{
 	background-color: none;
-	padding-left: 40%;
+	padding-left: 270px;
 	margin-right: 200px;
 }
+
+.acessar-conta{
+	border-radius: 10px;
+	background-color:#9E8FCA;
+	width: 100%; height: 100%;
+	border-style: solid;
+	border-color: black;
+	color: black;
+}
+
 .login-decoracao{
 	width: 230px;
 	height: 45px;
 	background-color:#9E8FCA;
-	border-radius: 12px;
-	border-style: solid;
-	margin-right: 50px;
-}
-#texto-login{
-	color: white;
+	display: flexbox;
+	justify-content: center;
+	align-items: center;
 }
 
 .texto-menu{
@@ -131,13 +138,11 @@ footer{
 
 /*CSS de contatos*/
 .texto-contato1{
-	padding-left: 100px;
-	
+	/* padding-left: 100px; */
 	text-align: left;
 }
 .texto-contato2{
 	padding-left: 20px;
-	/* margin-left: 60px; */
 	text-align: justify;
 	border-left: black;
 	border-left-style: solid;
@@ -145,10 +150,9 @@ footer{
 .texto-contato3{
 	padding-top: 15px;
 	text-align: justify;
-	margin-left: 190px;
-	border-top: black;
-	border-top-style: solid;
+	/* margin-left: 100px; */
 	margin-top: 20px;
+	border-top: solid;
 }
 .destaque{
 	text-align: left;
