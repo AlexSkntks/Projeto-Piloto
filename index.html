@@ -4,7 +4,7 @@
 
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Bootstrap CSS -->
@@ -23,30 +23,30 @@
 			font-size: 24pt;
 		}
 		.imagem_home{
-			padding-bottom: 0px; 
-			padding-left: 150px
+			padding-bottom: 0px;
+			min-width: 50px;
 		}
 		.introducao{
+			padding-left: 50px;
+			padding-right: 50px;
 			text-align: left;
-			display: grid;
-			justify-items: center;
+
 		}
 		.box-texto-introducao{
 			border-style: solid;
 			border-top-left-radius: 60px;
 			border-bottom-right-radius: 60px;
-			height: 110px;
-			width: 650px;
+			height: auto;
+			/* width: 650px; */
 			padding-top: 10px;
 			padding-left: 20px;
 			padding-right: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
 			border-color: #9E8FCA;
 			color: white;
 			background-color:#9E8FCA;
 			text-align: justify;
-		}
-		.box-texto{
-			margin-top: 30%;
 		}
 		.botao-contato{
 			margin-top: 30px;
@@ -85,31 +85,31 @@
 					<div class="container-fluid">
 					<div class="collapse navbar-collapse" id="navbarSupportedContent" >
 						<ul class="navbar-nav me-auto mb-0 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#" style="margin-left: 50px; margin-top: 10px;"><p class="texto-menu">Home</p></a>
-							<li class="nav-item dropdown" style="margin-left: 50px; margin-top: 10px;">
-								<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<span class="texto-menu">Acessores</span>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #9E8FCA;">
-								<li><button id="socio1" onmouseover="changeBG(1)" onmouseleave="oldColor(1)" class="dropdown-item" style="background-color:  #9E8FCA"><p>Jordan Ross Belfort</p></button></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><button id="socio2" onmouseover="changeBG(2)" onmouseleave="oldColor(2)" href="file:///home/alex/myGit/Projeto-Piloto/socio2.html"  class="dropdown-item" style="background-color:  #9E8FCA;"><p>Jessica Andrade de Souza</p></button></li>
-								</ul>
-							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#" style="margin-left: 50px; margin-top: 10px;"><p class="texto-menu">Home</p></a>
+								<li class="nav-item dropdown" style="margin-left: 50px; margin-top: 10px;">
+									<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="texto-menu">Acessores</span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #9E8FCA;">
+									<li><button id="socio1" onmouseover="changeBG(1)" onmouseleave="oldColor(1)" class="dropdown-item" style="background-color:  #9E8FCA"><p>Jordan Ross Belfort</p></button></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><button id="socio2" onmouseover="changeBG(2)" onmouseleave="oldColor(2)" href="file:///home/alex/myGit/Projeto-Piloto/socio2.html"  class="dropdown-item" style="background-color:  #9E8FCA;"><p>Jessica Andrade de Souza</p></button></li>
+									</ul>
+								</li>
 
-							<a class="nav-link active" href="#"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
+								<a class="nav-link active" href="#"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
+								
+								<div class="space-navbar"></div>
 
-
-						</li>
-						</ul>
-						<nav class="navbar navbar-expand-lg navbar-light">
-							<div class="container-fluid" id="botao-login" >
-								<div class="login-decoracao">
-									<a href="#"><button class="acessar-conta" onmouseover="changeTextColor(1)" onmouseleave="changeTextColor(2)"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+								<div id="botao-login" >
+									<div class="login-decoracao">
+										<a href="#"><button class="acessar-conta" onmouseover="changeTextColor(1)" onmouseleave="changeTextColor(2)"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+									</div>
 								</div>
-							</div>
-						</nav>
+							
+							</li>
+						</ul>
 
 
 						</div>
@@ -118,50 +118,61 @@
 			</header>
 
 			<main>
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col">
-							<div class="introducao">
-								<p2 class="texto-home">
+						<div class="col-lg-6">
+							<div class="row">
+								<div class="introducao">
+									<p2 class="texto-home">
 									Aqui o seu dinheiro rende mais! Conte com profissionais bem qualificados na
 									Buffet Asset.
-								</p2>
-								<div class="botao-contato">
-									<a href="contatos.html"><img src="imagens/entre_em_contato.png" width="330px" height="70px"></a>
+									</p2>
+									<div class="botao-contato">
+										<a href="contatos.html"><img src="imagens/entre_em_contato.png" width="330px" height="70px"></a>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+						<div class="col-lg-6">
+							<div class="row">
+								<img src="imagens/apresentacao1.png" width="auto" title="Análise do mercado e carteira de investimentos" alt="Equipe analaisando o mercado">	
+
+							</div>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" style="border-bottom-color: black; border-bottom-style: solid;"></div>
+					</div>
+					<div class="row aling-items-cente">
+						<div class="col-lg-6">
+							<div class="row">
+								<img src="imagens/Team_goals-rafiki-storyset.png" title="Trabalhando juntos para o melhor resultado" alt="Equipe de investidores profissionais">
+							</div>
+						</div>
+					  	<div class="col-lg-6">
+							<!-- <div class="row" id="space-page" style="height: 250px;">
+
+							</div> -->
+							<div class="row">
+								<div class="col">
+									<div class="box-texto">
+										<h2>Por que investir com a gente?</h2>
+										<div class="box-texto-introducao">
+											<p class="texto-introducao" style="font-size: 16pt; text-align: justify;">
+												Somos uma das maiores consultorias de investimentos do 
+												brasil, venha ter a segurança financeira que o seu bem estar
+												exige com nossa equipe de investidores.
+											</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="imagem_home">
-								<img src="imagens/apresentacao1.png" width="110%" height="110%" title="Análise do mercado e carteira de investimentos" alt="Equipe analaisando o mercado">
-							</div>
-						</div>
 					</div>
-				</div>
-				  <div class="container">
-					<div class="row">
-						<div class="col" style="border-bottom-color: black; border-bottom-style: solid;"> </div>
-					  </div>
-					<div class="row">
-					  <div class="col">
-						<img src="imagens/Team_goals-rafiki-storyset.png" title="Trabalhando juntos para o melhor resultado" alt="Equipe de investidores profissionais">
-					  </div>
-					  <div class="col">
-						<div class="box-texto">
-							<h2>Por que investir com a gente?</h2>
-							<div class="box-texto-introducao">
-								<p class="texto-introducao" style="font-size: 16pt; text-align: justify;">
-									Somos uma das maiores consultorias de investimentos do 
-									brasil, venha ter a segurança financeira que o seu bem estar
-									exige com nossa equipe de investidores.
-								</p>
-							</div>
-						</div>
-						
-					  </div>
-					</div>
-					<div class="row">
-						<div class="col" style="border-top: black; border-top-style: solid; border-bottom: black; border-bottom-style: solid;">
+					<!-- <div class="row">
+						<div class="col-sm-12" style="border-top: black; border-top-style: solid; border-bottom: black; border-bottom-style: solid; margin-top: 20px;">
 							<br><br>
 							<h2>Serviços</h2>
 							<br>
@@ -231,8 +242,8 @@
 							</div>
 							<br><br>
 						</div>
-					  </div>
-					</div>
+					</div> -->
+				</div>
 			</main>
 			<footer >
 

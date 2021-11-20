@@ -61,6 +61,9 @@ h2{
     font-family: 'Play', Time, serif;
 }
 
+.space-navbar{
+	margin-right: 100px;
+}
 main{
 	margin-top: 110px;
 	margin-bottom: 100px;
@@ -82,8 +85,12 @@ footer{
 
 #botao-login{
 	background-color: none;
-	padding-left: 270px;
-	margin-right: 200px;
+	/* padding-left: 50px; */
+	/* margin-left: 300px; */
+	/* padding-left: 30%; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .acessar-conta{
@@ -99,18 +106,24 @@ footer{
 	width: 230px;
 	height: 45px;
 	background-color:#9E8FCA;
-	display: flexbox;
-	justify-content: center;
-	align-items: center;
 }
 
 .texto-menu{
 	font-size: 18pt;
 }
-
+/* Estilo de socios */
+.box-socio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .socio{
 	justify-content: center;
 	align-content: center;
+	width: auto;
+}
+#nome{
+	margin-top: 25px;
 }
 
 .redes{
@@ -124,14 +137,10 @@ footer{
 }
 
 .chat{
-	/* width: max-content;*/
 	float: right;
 }
 .col-2{
 	border-style: solid;
-	/* float: left;
-	left: 0;
-	width: max-content; */
 	background-color: blueviolet;
 }
 
@@ -153,6 +162,7 @@ footer{
 	/* margin-left: 100px; */
 	margin-top: 20px;
 	border-top: solid;
+	margin-bottom: 150px;
 }
 .destaque{
 	text-align: left;
