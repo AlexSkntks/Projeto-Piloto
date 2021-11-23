@@ -11,7 +11,7 @@ body{
 p{
     @font-face{
         font-family: 'Play';
-        src : url('Play-Bold.ttf') format ('opentype');
+        src : url('/Play-Bold.ttf') format ('opentype');
         font-weight: normal;
         font-style: normal;
     }
@@ -23,7 +23,7 @@ p{
 p2{
 	@font-face{
         font-family: 'Play';
-        src : url('Play-Bold.ttf') format ('opentype');
+        src : url('/Play-Bold.ttf') format ('opentype');
         font-weight: normal;
         font-style: normal;
     }
@@ -35,7 +35,7 @@ p2{
 h5{
 	@font-face{
         font-family: 'Play';
-        src : url('Play-Bold.ttf') format ('opentype');
+        src : url('/Play-Bold.ttf') format ('opentype');
         font-weight: normal;
         font-style: normal;
     }
@@ -75,7 +75,7 @@ footer{
 }
 
 .main{
-	background-image: url("imagens/Rectangle_1.png");
+	background-image: url("/image/Rectangle_1.png");
 	background-repeat: no-repeat;
 	background-color: #F0EFEF;
 	width: 1440px;
@@ -107,14 +107,15 @@ footer{
 	border-radius: 30px;
 	border: 2px solid black;
 	border-radius: 10px;
-	box-shadow: inset 0 0 0 0 #725AC1;
+	box-shadow: inset 0 0 0 0 #2C1F41;
 	width: 100%;
 	height: 100%;
 }
 
 .acessar-conta:hover {
-	color: white;
-	box-shadow: inset 0 -100px 0 0 #725AC1;
+	color: rgb(46, 184, 226);
+	/* box-shadow: inset 0 -100px 0 0 #725AC1; */
+	box-shadow: inset 0 -100px 0 0#2C1F41;
 }
 
 .acessar-conta:active {
@@ -182,7 +183,7 @@ footer{
 	text-align: justify;
 	margin-top: 20px;
 	border-top: solid;
-	margin-bottom: 150px;
+	margin-bottom: 45px;
 }
 .destaque{
 	text-align: left;

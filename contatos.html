@@ -4,14 +4,18 @@
 
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
     <title>Buffet Asset</title>
-	<script type="text/javaScript" src="javaScript.js"></script>
+
+    <!-- Bootstrap CSS -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CSS e JS próprios -->
+	<link rel="stylesheet" href="/style.css">
+	<script type="text/javaScript" src="/javaScript.js"></script>
 	<style>
 		.col-6{
 			border-style: hidden;
@@ -30,7 +34,7 @@
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-light">
 
-					<a class="navbar-brand" href="#"><img id="logo" src="imagens/logo.png" title="Buffett Asset" alt="Buffett Asset"></a>
+					<a class="navbar-brand" href="/"><img id="logo" src="/image/logo.png" title="Buffett Asset" alt="Buffett Asset"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
@@ -38,15 +42,23 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent" >
 						<ul class="navbar-nav me-auto mb-0 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#" style="margin-left: 50px; margin-top: 10px;"><p class="texto-menu">Home</p></a>
+							<a class="nav-link active" aria-current="page" href="/" style="margin-left: 50px; margin-top: 10px;"><p class="texto-menu">Home</p></a>
 							<li class="nav-item dropdown" style="margin-left: 50px; margin-top: 10px;">
 								<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								<span class="texto-menu">Acessores</span>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #9E8FCA;">
-								<li><button id="socio1" onmouseover="changeBG(1)" onmouseleave="oldColor(1)" class="dropdown-item" style="background-color:  #9E8FCA"><p>Jordan Ross Belfort</p></button></li>
+								<li>
+									<button id="socio1" onclick="document.location='socio1'" onmouseover="changeBG(1)" onmouseleave="oldColor(1)" class="dropdown-item" style="background-color:  #9E8FCA">
+										<p>Jordan Ross Belfort</p>
+									</button>
+								</li>
 								<li><hr class="dropdown-divider"></li>
-								<li><button id="socio2" onmouseover="changeBG(2)" onmouseleave="oldColor(2)" href="file:///home/alex/myGit/Projeto-Piloto/socio2.html"  class="dropdown-item" style="background-color:  #9E8FCA;"><p>Jessica Andrade de Souza</p></button></li>
+								<li>
+									<button id="socio2" onclick="document.location='socio2'" onmouseover="changeBG(2)" onmouseleave="oldColor(2)"  class="dropdown-item" style="background-color:  #9E8FCA;">
+										<p>Jessica Andrade de Souza</p>
+									</button>
+								</li>
 								</ul>
 							</li>
 
@@ -56,7 +68,7 @@
 							
 							<div id="botao-login" >
 								<div class="login-decoracao">
-									<a href="#"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+									<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
 								</div>
 							</div>
 						</li>
@@ -64,7 +76,8 @@
 						
 						</div>
 					</div>
-				  </nav>
+				</nav>
+				
 			  	</header>
 				<main>
 					
@@ -80,9 +93,8 @@
 						<br>
 						<div class="row gx-5">
 						  <div class="col-lg-3">
-							<div class="p-3"><img class="contatos" src="imagens/Contatos.png" width="350px" alt="Ilustração" title="Atendimento ao publico"></div>
+							<img class="img-fluid" src="/image/Contatos.png" alt="Atendimento ao públicp" title="Atendimento ao público">
 						  </div>
-
 						  <div class="col-lg-9">
 							<div class="p-3">
 								<div class="row row-cols-2 gx-5">
@@ -128,35 +140,32 @@
 
 						<div class="row row-cols-auto">
 							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/instagram.png" title="Instagram" alt="Instagram"/></a>
+								<a href="#"><img class="redes" src="/image/instagram.png" title="Instagram" alt="Instagram"/></a>
 							</div>
 							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/whatsapp.png" title="Whatsapp" alt="Whatsapp"/></a>
+								<a href="#"><img class="redes" src="/image/whatsapp.png" title="Whatsapp" alt="Whatsapp"/></a>
 
 							</div>
 							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/Telegram.png" title="Telegram" alt="Telegram"/></a>
+								<a href="#"><img class="redes" src="/image/Telegram.png" title="Telegram" alt="Telegram"/></a>
 							</div>
 
 							<div class="col-1">
-								<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="imagens/github.png" title="Github" alt="Github"/></a>
+								<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="/image/github.png" title="Github" alt="Github"/></a>
 							</div>
 							<div class="col-8">
 								<div class="chat" style="border-style: solid; border-radius: 100px; width: 80px; background-color: #C1B0F2;">
-									<a href="#"><img class="redes" src="imagens/chat.png" title="Chat" alt="Chat"/></a>
-
+									<a href="#"><img class="redes" src="/image/chat.png" title="Chat" alt="Chat"/></a>
 								</div>
-
 							</div>
 						</div>
-
 					</div>
-
 				</footer>
 
 		</div>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
   </body>
+  	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<script type="textjavaScript" src="/js/bootstrap.js"></script>
+ 	<script type="textjavaScript" src="/js/bootstrap.min.js"></script>
 </html>
