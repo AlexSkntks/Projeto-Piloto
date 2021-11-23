@@ -31,13 +31,6 @@ p2{
     font-family: 'Play', Time, serif;
     font-size: 14pt;
 }
-.apresentacao{
-	justify-content: center;
-	text-align: justify;
-	padding-right: 50px;
-	padding-left: 50px;
-	margin-top: 50px;
-}
 
 h5{
 	@font-face{
@@ -141,6 +134,15 @@ footer{
 }
 
 /* Estilo de socios */
+
+.apresentacao{/*Texto da página*/
+	justify-content: center;
+	text-align: justify;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-top: 50px;
+}
+
 .box-socio{
 	display: flex;
 	align-items: center;
@@ -155,22 +157,18 @@ footer{
 	margin-top: 25px;
 }
 
-.col-4{
-	background-color: blueviolet;
-}
-
 .chat{
 	float: right;
 }
-.col-2{
+
+/* .col-2{
 	border-style: solid;
 	background-color: blueviolet;
-}
+} */
 
 
-/*CSS de contatos*/
+/*Estilo de contato*/
 .texto-contato1{
-	/* padding-left: 100px; */
 	text-align: left;
 }
 .texto-contato2{
@@ -182,7 +180,6 @@ footer{
 .texto-contato3{
 	padding-top: 15px;
 	text-align: justify;
-	/* margin-left: 100px; */
 	margin-top: 20px;
 	border-top: solid;
 	margin-bottom: 150px;
