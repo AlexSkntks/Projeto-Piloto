@@ -55,11 +55,49 @@
 							
 							<div class="space-navbar"></div>
 
-							<div id="botao-login" >
-								<div class="login-decoracao">
-									<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+							<% if (!isLogged ) { %>
+								<div id="botao-login">
+									<div class="login-decoracao">
+										<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+									</div>
 								</div>
-							</div>
+								<script>
+								/**/   
+								</script>
+						   <% } %>
+							
+							<% if (isLogged) { %>
+								<!-- Opções do usuário após efetuar login -->
+								<div id="menu-conta" class="menu-conta" style="margin-left: 40px;">
+									<div class="container px-4">
+										<div class="row gx-5">
+											<div class="col">
+												<div class="p-3">
+													<img id="img" width="70px" src="/image/carteira-digital.png" alt="Carteira de investimento" title="Carteira">
+												</div>
+											</div>
+											<div class="col">
+												<div class="p-3">
+													<div class="dropdown">
+														<img class="dropdown-toggle" id="img" width="70px" src="/image/profile.png" alt="Perfil" title="Perfil" data-bs-toggle="dropdown" aria-expanded="false">
+														<ul class="dropdown-menu" aria-labelledby="img" style="background-color: #9E8FCA;">
+														  <li><a class="dropdown-item" id="m-op" href="#">Alterar Carteira</a></li>
+														  <li><a class="dropdown-item" id="m-op" href="#">Alterar Email</a></li>
+														  <li><a class="dropdown-item" id="m-op" href="#">Alterar Senha</a></li>
+														  <li><a class="dropdown-item" id="m-op" href="#">Deletar Conta</a></li>
+														  <li><a class="dropdown-item" id="m-op" href="#">Sair</a></li>
+														</ul>
+													  </div>
+								
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<script>
+								/*sasasa*/
+								</script>
+						   <% } %>
 						</li>
 						</ul>
 					</div>

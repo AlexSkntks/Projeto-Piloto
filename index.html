@@ -137,6 +137,9 @@
 		#m-op:hover{
 			background-color: #9180c5;
 		}
+		#img{
+			box-shadow: 0px 0px 2px blueviolet;
+		}
 	</style>
   </head>
   <body>
@@ -177,7 +180,6 @@
 								<div class="space-navbar"></div>
 								
 								<% if (!isLogged ) { %>
-									<!-- Opções do usuário após efetuar login -->
 									<div id="botao-login">
 										<div class="login-decoracao">
 											<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
@@ -195,7 +197,7 @@
 											<div class="row gx-5">
 												<div class="col">
 													<div class="p-3">
-														<img width="70px" src="/image/carteira-digital.png" alt="Carteira de investimento" title="Carteira">
+														<img id="img" width="70px" src="/image/carteira-digital.png" alt="Carteira de investimento" title="Carteira">
 													</div>
 												</div>
 												<div class="col">
@@ -218,7 +220,7 @@
 									</div>
 									<script>
 									   
-									   document.getElementById('teste').innerHTML = "PORRA!!!";         
+									  /*sasasas*/         
 									</script>
 							   <% } %>		
 							</li>
