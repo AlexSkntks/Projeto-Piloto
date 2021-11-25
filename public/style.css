@@ -58,6 +58,10 @@ h2{
 	margin-right: 250px;
 }
 
+.menu-conta{
+	/* margin-right: 50px; */
+}
+
 main{
 	margin-top: 110px;
 	margin-bottom: 100px;
@@ -161,11 +165,6 @@ footer{
 .chat{
 	float: right;
 }
-
-/* .col-2{
-	border-style: solid;
-	background-color: blueviolet;
-} */
 
 
 /*Estilo de contato*/

@@ -27,3 +27,11 @@ function changeTextColor(op){
 
 	}
 }
+
+function cVal(op){
+	if(op === true){
+		val = true;
+	}else{
+		val = false;
+	}
+}

@@ -33,3 +33,6 @@ E no navegador digite a URL:
 
   - [Tutorial de html](https://www.w3schools.com/html/default.asp)
   - [Botões personalizados](https://cssbuttons.io/)
+
+### Outros
+ -[EJS](https://ejs.co/#install)
