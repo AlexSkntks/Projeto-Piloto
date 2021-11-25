@@ -6,11 +6,14 @@
 
 ## Como iniciar o servidor
 
-Certifique-se de ter o [Node.js](https://nodejs.org/en/download/) instalado.
+Certifique-se de ter o [Node.js](https://nodejs.org/en/download/) e o npm na sua máquina.
+Após baixar o repositório, na mesma pasta onde estão os arquivos _html_ digite no terminal:
 
-Na mesma pasta onde estão os arquivos _html_ digite no terminal:
+	npm install
 
-	node server.js
+Em seguida
+
+	npm start
 
 E no navegador digite a URL:
 
