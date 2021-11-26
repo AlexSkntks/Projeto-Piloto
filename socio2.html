@@ -55,8 +55,10 @@
 							
 							<a class="nav-link active" href="/contato"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
 							
-							<div class="space-navbar d-none d-md-block"></div>
+						</li>
+						</ul>
 
+						<form action="/login" method="GET" class="nav-right">
 							<% if (!isLogged ) { %>
 								<div id="botao-login">
 									<div class="login-decoracao">
@@ -66,9 +68,10 @@
 								<script>
 								/**/   
 								</script>
-						   <% } %>
-							
-						   <% if (isLogged) { %>
+							<% } %>
+						</form>
+						<form action="/" method="POST">
+							<% if (isLogged) { %>
 								<!-- Opções do usuário após efetuar login -->
 								<div id="menu-conta" class="menu-conta" style="margin-left: 40px;">
 									<div class="container px-4">
@@ -109,12 +112,10 @@
 									</div>
 								</div>
 								<script>
-								/*sasasas*/         
+								/**/         
 								</script>
-					   		<% } %>
-							
-						</li>
-						</ul>
+							<% } %>
+						</form>
 						</div>
 					</div>
 				  </nav>

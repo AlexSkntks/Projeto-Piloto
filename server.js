@@ -8,7 +8,9 @@ const bodyParser = require('body-parser')
 let things = require(__dirname + "/Clientes.js")
 
 app.use(express.static(path.join(__dirname,"public")))
-app.engine('html', require('ejs').renderFile);
+
+app.engine('html', require('ejs').renderFile);//permite enviar dados do Back-end para o front-end (EJS)
+
 app.set('view engine', 'html');
 app.set('views', __dirname);
 
@@ -17,7 +19,6 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 /* Cadastro de usuários*/
-
 function Cliente(nome, email, senha, carteira) {
 	this.nome = nome;
 	this.email = email;
@@ -50,15 +51,6 @@ function Cadastros(){
 
 //Variável com os cadastros
 let usuarios = new Cadastros();
-// let bancoDados = new Cadastros();
-// let us1 = new Cliente("alex", "lol", "123", "sasss");
-// let us2 = new Cliente("joao", "1ss", "12a3", "sasss");
-// let us3 = new Cliente("Maria", "1ss", "aaa", "sasss");
-// bancoDados.insereUsuario(us1);
-// bancoDados.insereUsuario(us2);
-// bancoDados.insereUsuario(us3);
-// //bancoDados.removeUsuario("joao", "12a3");
-// console.log(bancoDados.BuscaUsuario("alex", "123"));
 
 //Variável que controla a exibicão do menu de um usuário logado
 let login = false;
@@ -66,19 +58,19 @@ let login = false;
 /*Rotas */
 app.get('/', (req, res) => {
   	//res.sendFile(__dirname + "/index.html");
-	res.render(__dirname + "/index.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+	res.render(__dirname + "/index.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do front-end*/
 })
 
 app.get('/socio1', (req, res) => {
-	res.render(__dirname + "/socio1.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+	res.render(__dirname + "/socio1.html", {isLogged: login});
 })
 
 app.get('/socio2', (req, res) => {
-	res.render(__dirname + "/socio2.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+	res.render(__dirname + "/socio2.html", {isLogged: login});
 })
 
 app.get('/contato', (req, res) => {
-	res.render(__dirname + "/contatos.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+	res.render(__dirname + "/contatos.html", {isLogged: login});
 })
 
 app.get('/login', (req, res) => {
@@ -97,16 +89,16 @@ app.post('/', (req, res) => {
 
 app.post('/login', (req, res) => {
 
-	if(usuarios.BuscaUsuario(req.body.loginEmail, req.body.senha) === true){
+	if(usuarios.BuscaUsuario(req.body.loginEmail, req.body.senha) === true){//Logar um usuário
 		login = true;
-		res.render(__dirname + "/index.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+		res.render(__dirname + "/index.html", {isLogged: login});
 	}else if(req.body.nome !== undefined && req.body.senhaNovoCadastro !== undefined){//Efetuar novo cadastro
 		let user = new Cliente(req.body.nome, req.body.email, req.body.senhaNovoCadastro, req.body.carteira);
 		usuarios.insereUsuario(user);
 		login = true;
-		res.render(__dirname + "/index.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+		res.render(__dirname + "/index.html", {isLogged: login});
 	}else{
-		res.render(__dirname + "/login.html", {isLogged: login});/*Usando EJS para passar algum valor para o lado do cliente*/
+		res.render(__dirname + "/login.html", {isLogged: login});//Recarregar a página caso a operação não tenha sucesso
 	}
 })
 

@@ -73,20 +73,23 @@
 
 							<a class="nav-link active" href="#"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
 
-							<div class="space-navbar d-none d-md-block"></div>
 							
-							<% if (!isLogged ) { %>
-								<div id="botao-login">
-									<div class="login-decoracao">
-										<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+						</li>
+						</ul>
+						<form action="/login" method="GET" class="nav-right">
+								<% if (!isLogged ) { %>
+									<div id="botao-login">
+										<div class="login-decoracao">
+											<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+										</div>
 									</div>
-								</div>
-								<script>
-								/**/   
-								</script>
-						   <% } %>
-							
-						   <% if (isLogged) { %>
+									<script>
+									/**/   
+									</script>
+								<% } %>
+						</form>
+						<form action="/" method="POST">
+							<% if (isLogged) { %>
 								<!-- Opções do usuário após efetuar login -->
 								<div id="menu-conta" class="menu-conta" style="margin-left: 40px;">
 									<div class="container px-4">
@@ -129,10 +132,8 @@
 								<script>
 								/*sasasas*/         
 								</script>
-					  		<% } %>
-						</li>
-						</ul>
-						
+							<% } %>
+						</form>
 						</div>
 					</div>
 				</nav>

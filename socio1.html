@@ -49,12 +49,15 @@
 									</button>
 								</li>
 								</ul>
+
 							</li>
 							
 							<a class="nav-link active" href="/contato"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
 							
-							<div class="space-navbar d-none d-md-block"></div>
+						</li>
+						</ul>
 
+						<form action="/login" method="GET" class="nav-right">
 							<% if (!isLogged ) { %>
 								<div id="botao-login">
 									<div class="login-decoracao">
@@ -64,54 +67,54 @@
 								<script>
 								/**/   
 								</script>
-						   <% } %>
-							
-						   <% if (isLogged) { %>
-							<!-- Opções do usuário após efetuar login -->
-							<div id="menu-conta" class="menu-conta" style="margin-left: 40px;">
-								<div class="container px-4">
-									<div class="row gx-5">
-										<div class="col">
-											<div class="p-3">
-												<img id="img" width="70px" src="/image/carteira-digital.png" alt="Carteira de investimento" title="Carteira">
+							<% } %>
+						</form>
+						<form action="/" method="POST">
+							<% if (isLogged) { %>
+								<!-- Opções do usuário após efetuar login -->
+								<div id="menu-conta" class="menu-conta" style="margin-left: 40px;">
+									<div class="container px-4">
+										<div class="row gx-5">
+											<div class="col">
+												<div class="p-3">
+													<img id="img" width="70px" src="/image/carteira-digital.png" alt="Carteira de investimento" title="Carteira">
+												</div>
 											</div>
-										</div>
-										<div class="col">
-											<div class="p-3">
-												<div class="dropdown">
-													<img class="dropdown-toggle" id="img" width="70px" src="/image/profile.png" alt="Perfil" title="Perfil" data-bs-toggle="dropdown" aria-expanded="false">
-													<ul class="dropdown-menu" aria-labelledby="img" style="background-color: #9E8FCA;">
-														<form action="/" method="POST">
-															<li>
-																<button class="dropdown-item" id="m-op" type="button">Acessar Carteira</button>
-															</li>
-															<li>
-																<button class="dropdown-item" id="m-op" type="button">Alterar Email</button>
-															</li>
-															<li>
-																<button class="dropdown-item" id="m-op" type="button">Alterar Senha</button>
-															</li>
-															<li>
-																<button class="dropdown-item" id="m-op" type="button" name="deletarConta" value="4">Deletar Conta</button>
-															</li>
-															<li>
-																<button class="dropdown-item" name="sair" id="m-op" type="submit" value="5">Sair</button>
-															</li>
-														</form>
-														
-													</ul>
-												  </div>
+											<div class="col">
+												<div class="p-3">
+													<div class="dropdown">
+														<img class="dropdown-toggle" id="img" width="70px" src="/image/profile.png" alt="Perfil" title="Perfil" data-bs-toggle="dropdown" aria-expanded="false">
+														<ul class="dropdown-menu" aria-labelledby="img" style="background-color: #9E8FCA;">
+															<form action="/" method="POST">
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button">Acessar Carteira</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button">Alterar Email</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button">Alterar Senha</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button" name="deletarConta" value="4">Deletar Conta</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" name="sair" id="m-op" type="submit" value="5">Sair</button>
+																</li>
+															</form>
+															
+														</ul>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<script>
-							  /*sasasas*/         
-							</script>
-					  		 <% } %>
-						</li>
-						</ul>
+								<script>
+								/**/         
+								</script>
+							<% } %>
+						</form>
 					</div>
 					</div>
 				  </nav>

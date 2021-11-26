@@ -1,3 +1,5 @@
+/*Cabeçalho e tags personalizadas*/
+
 body{
 	justify-content: center;
 	display: flex;
@@ -54,15 +56,9 @@ h2{
     font-family: 'Play', Time, serif;
 }
 
-.space-navbar{
-	margin-right: 600px;
-	display: flex;
-	width: 100px;
-	min-width: none;
-}
-
 .menu-conta{
-	/* margin-right: 50px; */
+	margin-right: 50px;
+	padding-left: 60px;
 }
 
 #img{
@@ -82,13 +78,6 @@ header{
 	width: 100%;
 }
 
-footer{
-	background-color: #9E8FCA;
-	padding-top: 10px;
-	height: 50px;
-	width: 100%;
-}
-
 .redes{
 	width: 30px;
 	height: 30px;
@@ -98,7 +87,6 @@ footer{
 	background-image: url("/image/Rectangle_1.png");
 	background-repeat: no-repeat;
 	background-color: #F0EFEF;
-	/* width: 1440px; */
 	text-align: center;
 	width: 100%;
 	background-size: 100% 30%;
@@ -108,14 +96,12 @@ footer{
 	justify-content: center;
 }
 
-#botao-login{
-	/* padding-left: 50px; */
-	/* margin-left: 300px; */
-	/* padding-left: 30%; */
+.nav-right{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 50px;
+	margin-right: 100px; 
+	padding-left: 100px;
 }
 
 .acessar-conta {
@@ -139,7 +125,6 @@ footer{
 
 .acessar-conta:hover {
 	color: rgb(46, 184, 226);
-	/* box-shadow: inset 0 -100px 0 0 #725AC1; */
 	box-shadow: inset 0 -100px 0 0#2C1F41;
 }
 
@@ -151,12 +136,23 @@ footer{
 	width: 230px;
 	height: 45px;
 	background-color: none;
-	margin-bottom: 20px;
-	margin-right: 20px;
 }
 
 .texto-menu{
 	font-size: 18pt;
+}
+
+/* Rodapé */
+footer{
+	background-color: #9E8FCA;
+	padding-top: 10px;
+	height: 50px;
+	width: 100%;
+}
+
+.chat{
+	float: right;
+	margin-right: 30px;
 }
 
 /* Estilo de socios */
@@ -180,15 +176,10 @@ footer{
 	align-content: center;
 	width: auto;
 }
+
 #nome{
 	margin-top: 25px;
 }
-
-.chat{
-	float: right;
-	margin-right: 30px;
-}
-
 
 /*Estilo de contato*/
 .texto-contato1{
