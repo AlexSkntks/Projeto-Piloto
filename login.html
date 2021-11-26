@@ -27,7 +27,7 @@
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-light">
 
-					<a class="navbar-brand" href="#"><img id="logo" src="imagens/logo.png" title="Buffett Asset" alt="Buffett Asset"></a>
+					<a class="navbar-brand" href="/"><img id="logo" src="/image/logo.png" title="Buffett Asset" alt="Buffett Asset"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
@@ -35,109 +35,168 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent" >
 						<ul class="navbar-nav me-auto mb-0 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#" style="margin-left: 50px; margin-top: 10px;"><p class="texto-menu">Home</p></a>
+							<a class="nav-link active" aria-current="page" href="/" style="margin-left: 50px; margin-top: 10px;"><p class="texto-menu">Home</p></a>
 							<li class="nav-item dropdown" style="margin-left: 50px; margin-top: 10px;">
 								<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								<span class="texto-menu">Acessores</span>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #9E8FCA;">
-								<li><button id="socio1" onmouseover="changeBG(1)" onmouseleave="oldColor(1)" class="dropdown-item" style="background-color:  #9E8FCA"><p>Jordan Ross Belfort</p></button></li>
+								<li>
+									<button id="socio1" onclick="document.location='socio1'" onmouseover="changeBG(1)" onmouseleave="oldColor(1)" class="dropdown-item" style="background-color:  #9E8FCA">
+										<p>Jordan Ross Belfort</p>
+									</button>
+								</li>
 								<li><hr class="dropdown-divider"></li>
-								<li><button id="socio2" onmouseover="changeBG(2)" onmouseleave="oldColor(2)" href="file:///home/alex/myGit/Projeto-Piloto/socio2.html"  class="dropdown-item" style="background-color:  #9E8FCA;"><p>Jessica Andrade de Souza</p></button></li>
+								<li>
+									<button id="socio2" onclick="document.location='socio2'" onmouseover="changeBG(2)" onmouseleave="oldColor(2)"  class="dropdown-item" style="background-color:  #9E8FCA;">
+										<p>Jessica Andrade de Souza</p>
+									</button>
+								</li>
 								</ul>
 							</li>
 
-							<a class="nav-link active" href="#"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
-							<div class="space-navbar"></div>
-							<div id="botao-login" >
-								<div class="login-decoracao">
-									<a href="#"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
-								</div>
-							</div>
+							<a class="nav-link active" href="/contato"><p class="texto-menu" style="margin-left: 50px; margin-top: 10px;">Contato</p></a>
 
+							<div class="space-navbar d-none d-md-block"></div>
+							
+							<% if (!isLogged ) { %>
+								<div id="botao-login">
+									<div class="login-decoracao">
+										<a href="/login"><button class="acessar-conta"><p class="texto-menu" id="texto-login">Acesse sua conta</p></button></a>
+									</div>
+								</div>
+								<script>
+								/**/   
+								</script>
+						   <% } %>
+							
+						   <% if (isLogged) { %>
+								<!-- Opções do usuário após efetuar login -->
+								<div id="menu-conta" class="menu-conta" style="margin-left: 40px;">
+									<div class="container px-4">
+										<div class="row gx-5">
+											<div class="col">
+												<div class="p-3">
+													<img id="img" width="70px" src="/image/carteira-digital.png" alt="Carteira de investimento" title="Carteira">
+												</div>
+											</div>
+											<div class="col">
+												<div class="p-3">
+													<div class="dropdown">
+														<img class="dropdown-toggle" id="img" width="70px" src="/image/profile.png" alt="Perfil" title="Perfil" data-bs-toggle="dropdown" aria-expanded="false">
+														<ul class="dropdown-menu" aria-labelledby="img" style="background-color: #9E8FCA;">
+															<form action="/" method="POST">
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button">Acessar Carteira</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button">Alterar Email</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" id="m-op" type="button">Alterar Senha</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" id="m-op" type="submit" name="deletarConta" value="4">Deletar Conta</button>
+																</li>
+																<li>
+																	<button class="dropdown-item" name="sair" id="m-op" type="submit" value="5">Sair</button>
+																</li>
+															</form>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<script>
+								/*sasasas*/         
+								</script>
+					  		<% } %>
 						</li>
 						</ul>
 						
-
-
 						</div>
 					</div>
-				  </nav>
-			  	</header>
+				</nav>
+			</header>
 				<main>
-					<div class="container" style="margin-top: 50px;">
-						<div class="row">
-							<div class="col"><p>Faça o seu login aqui<p></div>
-							<div class="col"><p>Primeira vez com a gente? Cadastre-se no nosso sistema<p></div>
-						</div>
-						<div class="row cols-2">
-							<div class="col" style="border-right: black; border-right-style: solid; border-right-width: 3pt;">
-								<form action="/" method="POST">
-									<div class="mb-3">
-										<input type="text" class="form-control" id="formGroupExampleInput" placeholder="login" name="login">
-									  </div>
-									  <div class="mb-3">
-										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="senha" name="senha">
-									  </div>
-									  <button>Personalizar</button>
-								</form>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col"><p>Faça o seu login aqui<p></div>
+								<div class="col"><p>Primeira vez com a gente? Cadastre-se no nosso sistema<p></div>
 							</div>
-							<div class="col">
-								<form action="/" method="POST">
-									<div class="mb-3">
-										<input type="text" class="form-control" id="formGroupExampleInput" placeholder="nome">
-									  </div>
-									  <div class="mb-3">
-										<input type="email" class="form-control" id="formGroupExampleInput2" placeholder="email">
-									  </div>
-									  <div class="mb-3">
-										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="senha">
-									  </div>
-									  <div class="mb-3">
-										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="confirmar senha">
-									  </div>
-									  <div class="mb-3">
-										<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="carteira">
-									  </div>
-									  <button>Personalizar</button>
-								</form>
+							<div class="row cols-2">
+								<div class="col-6" style="border-right: black; border-right-style: solid; border-right-width: 3pt;">
+									<form action="/login" method="POST">
+										<div class="mb-3">
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="email" name="loginEmail">
+										  </div>
+										  <div class="mb-3">
+											<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="senha" name="senha">
+										  </div>
+										  <div class="mb-3">
+											<button class="btn1">Login</button>
+										  </div>
+									</form>
+								</div>
+								<div class="col-6">
+									<form action="/login" method="POST">
+										<div class="mb-3">
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="nome" name ="nome">
+										  </div>
+										  <div class="mb-3">
+											<input type="email" class="form-control" id="formGroupExampleInput2" placeholder="email" name="email">
+										  </div>
+										  <div class="mb-3">
+											<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="senha" name="senhaNovoCadastro">
+										  </div>
+										  <div class="mb-3">
+											<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="confirmar senha" name="senhaConfirmar">
+										  </div>
+										  <div class="mb-3">
+											<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="carteira">
+										  </div>
+										  <div class="mb-3">
+											<button class="btn1">Cadastrar</button>
+										  </div>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
+					
 					<div style="height:250px;"></div>
 				</main>
 
-				<footer >
-
+				<footer>
 					<!-- Grid container -->
-					<div class="container">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-1">
+								<a href="#"><img class="redes" src="/image/instagram.png"/></a>
+							</div>
+							<div class="col-1">
+								<a href="#"><img class="redes" src="/image/whatsapp.png"/></a>
+							
+							</div>
+							<div class="col-1">
+								<a href="#"><img class="redes" src="/image/Telegram.png"/></a>
+							</div>
+							
+							<div class="col-1">
+								<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="/image/github.png"/></a>
+							</div>
 
-						<div class="row row-cols-auto">
-							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/instagram.png" title="Instagram" alt="Instagram"/></a>
-							</div>
-							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/whatsapp.png" title="Whatsapp" alt="Whatsapp"/></a>
-
-							</div>
-							<div class="col-1">
-								<a href="#"><img class="redes" src="imagens/Telegram.png" title="Telegram" alt="Telegram"/></a>
-							</div>
-
-							<div class="col-1">
-								<a href="https://github.com/AlexSkntks/Projeto-Piloto"><img class="redes" src="imagens/github.png" title="Github" alt="Github"/></a>
-							</div>
 							<div class="col-8">
 								<div class="chat" style="border-style: solid; border-radius: 100px; width: 80px; background-color: #C1B0F2;">
-									<a href="#"><img class="redes" src="imagens/chat.png" title="Chat" alt="Chat"/></a>
+									<a href="#"><img class="redes" src="/image/chat.png"/></a>
 
 								</div>
 
 							</div>
 						</div>
-
 					</div>
-
 				</footer>
 
 		</div>
