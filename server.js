@@ -5,7 +5,6 @@ let app = express()
 let port = 3000
 const path  = require("path")
 const bodyParser = require('body-parser')
-let things = require(__dirname + "/Clientes.js")
 
 app.use(express.static(path.join(__dirname,"public")))
 
